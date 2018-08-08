@@ -1,0 +1,28 @@
+/* --- intro page --- */
+
+.intro-content {
+  width: 100%;
+  background: $mint;
+}
+
+.frontpage-intro {
+  width: 60%;
+  margin: auto;
+  font-family: $font-family-principal;
+}
+
+.intro-disclaimer {
+  .principal-text {
+  font-size: 3em;
+  font-weight: $font-weight-bold;
+  }
+}
+
+.details-text {
+  font-family: $font-family-principal;
+  display: inline;
+}
+
+// .details-text.hidden {
+//   display: none;
+// }
