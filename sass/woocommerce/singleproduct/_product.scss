@@ -1,0 +1,66 @@
+/* --- woocommerce : single product content --- */
+
+
+.single-product {
+  .product {
+  margin-top: 60px;
+  }
+}
+
+
+h1.product_title.entry-title {
+  text-align: center;
+  font-family: $font-family-accent;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+
+.product_meta {
+  text-align: center;
+  text-transform: uppercase;
+    .posted_in{
+      display: inline-flex;
+    }
+    a {
+      color: $gray-dark;
+    }
+}
+
+.woocommerce-product-gallery {
+  float: both !important;
+  margin: auto !important;
+  width: 50% !important;
+}
+
+.summary {
+  text-align: center;
+}
+
+.amount {
+  display: block;
+  color: $gray-dark;
+  font-weight: $font-weight-bold;
+}
+
+del {
+    font-size: $font-size-base * 1.15;
+}
+
+ins {
+  text-decoration: none;
+    font-size: $font-size-base * 1.45;
+}
+
+.quantity {
+  margin: 30px auto;
+  // .input-text {
+  //   color: $pink;
+  // }
+}
+
+input[type="number"] {
+   // border: none;
+   // background: $mint;
+   padding: 8px;
+}

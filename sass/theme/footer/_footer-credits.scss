@@ -1,0 +1,19 @@
+/* --- footer : crédits --- */
+
+
+.site-info {
+  // border: $border--thin--mint;
+  grid-column: 5 / span 6;
+
+  a {
+    font-family: $font-family-accent;
+    font-style: italic;
+    color: $gray-dark;
+    text-decoration :none;
+    &:hover {
+      background: $mint;
+      color: $white;
+    }
+  }
+
+}

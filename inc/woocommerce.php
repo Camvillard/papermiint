@@ -150,17 +150,12 @@ add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
 add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
 
+// include single page template
+require get_template_directory() . '/woocommerce/templates/content-product_cat.php';
+require get_template_directory() . '/woocommerce/templates/archive-product.php';
 
-
-// SINGLE PRODUCT
-
+// include single page template
 require get_template_directory() . '/woocommerce/templates/content-single-product.php';
 
-
-add_action( 'woocommerce_before_shop_loop', 'render_first_widget' );
-function render_first_widget() {
-	if ( is_page('frontpage') ) {
-			// get_template_part( 'widget-templates/wc-first-widget' );
-			echo "hello";
-	}
-}
+// RELATED PRODUCTS
+require get_template_directory() . '/woocommerce/templates/content-related_product.php';

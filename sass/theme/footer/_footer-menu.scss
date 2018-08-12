@@ -1,0 +1,21 @@
+/* --- footer : menu --- */
+
+
+.footer-nav {
+  grid-column: 1 / span 3;
+
+  ul {
+    list-style: none;
+    text-align: right;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: $gray-dark;
+    &:hover {
+      font-family: $font-family-accent;
+      font-style: italic;
+      text-transform: lowercase;
+    }
+  }
+}

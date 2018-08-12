@@ -1,0 +1,81 @@
+/* --- woocommerce: single product related products --- */
+
+
+.related {
+  margin-top: 40px;
+
+  h3 {
+    width: 70%;
+    margin: 20px auto;
+    font-size: $font-size-base * 1.25 ;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  ul.products {
+    clear: both;
+    @include clearfix();
+    text-align: center;
+
+    li.product {
+      list-style: none;
+      float: left;
+      margin: 0 3.8% 2.992em 0;
+      padding: 0;
+      position: relative;
+      width: 22.05%;
+      margin-left: 0;
+    }
+
+    li.first {
+      clear: both;
+    }
+
+    li.last {
+      margin-right: 0;
+    }
+  }
+
+  ul.products {
+    &.columns-1 {
+      li.product {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    &.columns-2 {
+      li.product {
+        width: 48%;
+      }
+    }
+    &.columns-3 {
+      li.product {
+        width: 30.75%;
+      }
+    }
+    &.columns-4 {
+      li.product {
+        width: 22%;
+      }
+    }
+    &.columns-5 {
+      li.product {
+        width: 16.95%;
+      }
+    }
+    &.columns-6 {
+      li.product {
+        width: 13.5%;
+      }
+    }
+  }
+
+  .woocommerce-loop-product__title {
+    color: $gray-dark;
+    text-align: center;
+    font-size: $font-size-base * 0.8;
+    font-family: $font-family-accent;
+    font-style: italic;
+  }
+
+}

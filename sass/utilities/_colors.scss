@@ -1,6 +1,18 @@
-/* --- theme utilities : colors --- */
+
 
 
 // colors
+$gray-dark: #020607;
+$mint-dark: #87D6B6;
 $mint: #B9EFD9;
+$mint-light: #E8F9F2;
 $pink: #F7DCE2;
+$purple-light: #A9B6C9;
+
+
+$primary: $mint;
+$secondary: $pink;
+$success: $mint;
+$info: $mint-dark;
+$warning: $purple-light;
+$danger: $purple-light;

@@ -23,18 +23,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-						<!-- footer menu  -->
-						<?php wp_nav_menu(
-							array(
-								'theme_location'  => 'footer',
-								'container_class' => 'footer-menu-class',
-								'container_id'    => 'footerMenu',
-								'menu_class'      => 'footer-nav',
-								'menu_id'         => 'footerNav',
-								'depth'           => 1,
-							)
-						); ?>
-
 
 					<div class="site-info">
 						&copy; 2018 - papermiint - tous droits reserves <br> site, papeterie et mots d'adieux conçus par <a href="https://camillevillard.com">camille villard</a>

@@ -1,0 +1,56 @@
+/* --- woocommerce: archive page for the categories --- */
+
+.tax-product_cat {
+
+  h1.woocommerce-products-header__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .woocommerce-result-count {
+    text-align: right;
+    font-family: $font-family-accent;
+    font-style: italic;
+  }
+
+  .woocommerce-ordering {
+    width: 35%;
+    float: right;
+    clear: both;
+  }
+
+.products {
+  border: $border-test;
+
+
+// affichage des sous catégories
+  li {
+    h2.woocommerce-loop-category__title {
+      font-family: $font-family-accent;
+      text-align: center;
+      mark.count {
+        font-size: $font-size-base * 0.8;
+        vertical-align: super;
+        background: $mint-light;
+      }
+    }
+  }
+
+  li.product-category {
+    display: block;
+  }
+
+// affichage des produits
+  li.product {
+    list-style: none;
+
+  }
+
+h2.woocommerce-loop-product__title {
+  text-align: center;
+}
+
+}
+
+
+}

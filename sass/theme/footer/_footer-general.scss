@@ -1,0 +1,10 @@
+/* --- footer : general --- */
+
+// #wrapper-footer .container {
+//   display: flex;
+//   flex-direction: row;
+// }
+.site-footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
