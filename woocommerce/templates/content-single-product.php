@@ -13,6 +13,7 @@ remove_action('woocommerce_before_single_product_summary','woocommerce_show_prod
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
 add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_title', 9);
 
+
 // relocate category
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_meta', 40);
 add_action('woocommerce_before_single_product_summary','woocommerce_template_single_meta', 8);

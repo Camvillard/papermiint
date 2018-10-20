@@ -2,7 +2,29 @@
 
 
 .btn {
+  font-family: $font-family-secondary;
   text-transform: uppercase;
   color: $mint-dark;
   border: $btn-border-width solid $mint-dark;
+}
+
+.btn-light {
+  font-family: $font-family-secondary;
+  color: $white;
+  background: $mint;
+  border: $border--medium--mint;
+  padding: 12px 8px;
+  &:hover {
+    color: $mint;
+    background: $white;
+    border: $border--medium--mint;
+    font-family: $font-family-accent;
+    font-style: italic;
+  }
+}
+
+.btn-simple {
+  color: $mint-dark;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
 }

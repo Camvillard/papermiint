@@ -1,28 +1,116 @@
-/* --- intro page --- */
+/* ---front page : intro section --- */
 
-.intro-content {
-  width: 100%;
-  background: $pink;
-}
+.home {
+  background-color: $white;
+  background-image: linear-gradient($mint-light 1px, transparent 1px),
+  linear-gradient(90deg, $mint-light 1px, transparent 1px),
+  linear-gradient($mint-light 1px, transparent 1px),
+  linear-gradient(90deg, $mint-light 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-1px -1px;
 
-.frontpage-intro {
-  width: 60%;
-  margin: auto;
-  font-family: $font-family-principal;
-}
 
-.intro-disclaimer {
-  .principal-text {
-  font-size: 3em;
-  font-weight: $font-weight-bold;
+
+  .intro-disclaimer {
+    margin-bottom: 20px;
+
+    .principal-text {
+      font-family: $font-family-accent;
+      font-weight: $font-weight-black;
+      font-size: $font-size-base * 3.6;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      span {
+        font-style: italic;
+        display: block;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-base * 3.4;
+      }
+    }
+    .details-text {
+      font-family: $font-family-secondary;
+      font-weight: $font-weight-light;
+    }
   }
+
+
+  .intro-content {
+    background: $white;
+  }
+
+  .cta-shop {
+    width: 80%;
+    margin: auto;
+    a {
+      @extend .btn-light;
+      display: block;
+      margin: 10px auto;
+      font-size: $font-size-base * 1.6;
+      text-align: center;
+    }
+  }
+
 }
 
-.details-text {
-  font-family: $font-family-principal;
-  display: inline;
+// plus de 480 px
+@include media-breakpoint-up(xs) {
 }
+// plus de 600 px
+@include media-breakpoint-up(sm) {
+}
+// plus de 840 px
+@include media-breakpoint-up(md) {
+}
+// plus de 1024 px
+@include media-breakpoint-up(lg) {
+  .home {
 
-// .details-text.hidden {
-//   display: none;
-// }
+    .site-main {
+      margin-top: 90px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .intro-disclaimer {
+      border: $border-test;
+      grid-column: 1 / 6;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      .principal-text {
+        font-size: $font-size-base * 5.2;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        span {
+          font-size: $font-size-base * 4.8;
+        }
+      }
+      .details-text {
+        width: 60%;
+        margin-left: 12%;
+      }
+    }
+
+    // .intro-content {
+    //   grid-column: 8 / 13;
+    //   background: $white;
+    // }
+
+    .cta-shop {
+      grid-column: 7 / 13;
+      margin: auto;
+      width: 60%;
+      a {
+        margin: 10px auto;
+        font-size: $font-size-base * 2;
+      }
+    }
+
+  }
+} // fin breakpoint lg
+
+// plus de 1280px
+@include media-breakpoint-up(xl) {
+}
+// plus de 1440px
+@include media-breakpoint-up(xxl) {
+}

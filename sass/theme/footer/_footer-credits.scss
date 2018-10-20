@@ -2,18 +2,68 @@
 
 
 .site-info {
-  // border: $border--thin--mint;
-  grid-column: 5 / span 6;
+  font-family: $font-family-secondary;
+  font-size: $font-size-base * 0.7;
+  line-height: 1.2;
+  text-align: center;
 
   a {
     font-family: $font-family-accent;
     font-style: italic;
     color: $gray-dark;
     text-decoration :none;
+    font-size: $font-size-base * 0.7;
     &:hover {
       background: $mint;
       color: $white;
     }
   }
+}
 
+// plus de 480 px
+@include media-breakpoint-up(xs) {
+  .site-info {
+
+  }
+}
+// plus de 600 px
+@include media-breakpoint-up(sm) {
+  .site-info {
+
+  }
+}
+// plus de 840 px
+@include media-breakpoint-up(md) {
+  .site-info {
+    font-size: $font-size-base * 0.8;
+    line-height: 1.4;
+
+  }
+}
+// plus de 1024 px
+@include media-breakpoint-up(lg) {
+  .site-info {
+    grid-column: 6 / 13;
+    font-family: $font-family-secondary;
+    font-size: $font-size-base * 1;
+    line-height: 1.2;
+    text-align: left;
+    align-self: end;
+
+    a {
+      font-size: $font-size-base * 1;
+    }
+  }
+}
+// plus de 1280px
+@include media-breakpoint-up(xl) {
+  .site-info {
+
+  }
+}
+// plus de 1440px
+@include media-breakpoint-up(xxl) {
+  .site-info {
+
+  }
 }

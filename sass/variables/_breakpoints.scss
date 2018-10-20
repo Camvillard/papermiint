@@ -1,12 +1,17 @@
-/* --- footer : general --- */
+/* --- theme utilities : new breakpoints --- */
 
-// #wrapper-footer .container {
-//   display: flex;
-//   flex-direction: row;
-// }
-.site-footer {
-  
-}
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 479px,
+  sm: 599px,
+  md: 839px,
+  lg: 1023px,
+  xl: 1279px,
+  xxl: 1439px,
+);
+
+
+/* responsive helpers
 
 // plus de 480 px
 @include media-breakpoint-up(xs) {
@@ -19,11 +24,6 @@
 }
 // plus de 1024 px
 @include media-breakpoint-up(lg) {
-  .site-footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
-
 }
 // plus de 1280px
 @include media-breakpoint-up(xl) {
@@ -31,3 +31,5 @@
 // plus de 1440px
 @include media-breakpoint-up(xxl) {
 }
+
+*/

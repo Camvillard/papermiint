@@ -1,0 +1,18 @@
+/* --- theme utilities : typography --- */
+
+
+
+
+$font-family-principal: "PT Sans", sans-serif;
+$font-family-secondary: "Filson Pro", sans-serif;
+$font-family-accent: "Playfair Display", serif;
+
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$font-family-base: $font-family-principal !default;
+$headings-font-family: $font-family-secondary !default;
+
+// $font-size-base

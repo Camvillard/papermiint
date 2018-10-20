@@ -1,5 +1,120 @@
 /* --- special templates : contact page --- */
 
 .page-template-contact {
-  background: $mint;
+  background-color: $mint-light;
+  background-image: linear-gradient(white 1px, transparent 1px),
+  linear-gradient(90deg, white 1px, transparent 1px),
+  linear-gradient(white 1px, transparent 1px),
+  linear-gradient(90deg, white 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-1px -1px;
+
+  .wrapper {
+    padding: 0px;
+  }
+
+  .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .retour-site {
+    text-align: center;
+
+    a {
+    font-family: $font-family-accent;
+    font-style: italic;
+    text-transform: lowercase;
+    color: $gray-light;
+    font-size: $font-size-base * 1.2;
+  }
+}
+
+  .entry-header {
+    h1 {
+      text-align: center;
+      font-weight: $font-weight-black;
+      font-size: $font-size-base * 5;
+      color: $mint;
+   }
+  }
+
+  .entry-content {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    p {
+      color: $mint-dark;
+      font-size: $font-size-base * 0.7;
+    }
+   }
+
+   .site-footer {
+     display: inline;
+     text-align: center;
+   }
+
+}
+
+// plus de 480 px
+@include media-breakpoint-up(xs) {
+}
+// plus de 600 px
+@include media-breakpoint-up(sm) {
+}
+// plus de 840 px
+@include media-breakpoint-up(md) {
+}
+// plus de 1024 px
+@include media-breakpoint-up(lg) {
+  .page-template-contact {
+      min-height: 100vh;
+
+    .retour-site {
+      transform: rotate(-90deg);
+      position: fixed;
+      top: 50vh;
+      left: 1vw;
+      a {
+      font-size: $font-size-base * 1.2;
+    }
+  }
+    .entry-header {
+      h1 {
+       font-size: $font-size-base * 14;
+     }
+    }
+
+    // .entry-content {
+    //   p {
+    //     font-size: $font-size-base * 0.8;
+    //   }
+    //  }
+
+    .site-info {
+      align-self: end;
+    }
+
+  }
+}
+// plus de 1280px
+@include media-breakpoint-up(xl) {
+
+  .page-template-contact {
+    .entry-header {
+      h1 {
+       font-size: $font-size-base * 16;
+     }
+    }
+  }
+}
+// plus de 1440px
+@include media-breakpoint-up(xxl) {
+  .page-template-contact {
+    .entry-header {
+      h1 {
+       font-size: $font-size-base * 18;
+     }
+    }
+  }
 }

@@ -1,0 +1,216 @@
+/* --- plugins : ninjaforms --- */
+
+
+// général
+
+.nf-form-fields-required {
+  display: none;
+}
+
+
+.nf-form-content {
+  margin-bottom: 30px;
+
+  .nf-field-container {
+    margin: 0px;
+    font-family: $font-family-secondary;
+  }
+
+  .ninja-forms-field.nf-element{
+    border: none;
+    border-radius: 0px;
+    background: none;
+    text-align: center;
+  }
+
+    input[placeholder],
+    textarea {
+      color: $gray-dark;
+      font-size: $font-size-base * 2;
+      font-weight: $font-weight-bold;
+    }
+
+
+  ::-moz-placeholder {
+  color: $gray-dark;
+  }
+  ::-webkit-input-placeholder {
+  color: $gray-dark;
+  }
+
+  // submit button
+  input[type=button] {
+    @extend .btn-simple;
+    font-size: $font-size-base * 2;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+    padding-top: 6px;
+    padding-bottom: 16px;
+  }
+
+  input[type=button]:hover {
+    border: $border--large--mint-dark;
+    background: $white;
+    font-family: $font-family-accent;
+    font-style: italic;
+  }
+
+  /* Change Autocomplete styles in Chrome*/
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: $mint-dark;
+    background-color: $pink;
+    transition: 5000s ease-in-out 0s;
+  }
+
+  // text fields
+  input[type=text]:focus,
+  input[type=email]:focus,
+  textarea:focus, {
+    color: $mint-dark;
+    outline: none;
+  }
+
+  // error messages
+  .nf-error-msg {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    color: $white;
+    background: $burgundy;
+    font-size: $font-size-base * 2.4;
+    text-align: center;
+    font-weight: $font-weight-bold;
+  }
+
+
+}
+
+// message de confirmation
+.nf-response-msg {
+  p {
+    font-size: $font-size-base * 1.8;
+    font-family: $font-family-secondary;
+    color: $gray-dark;
+  }
+}
+
+
+
+// premier bloc
+#nf-field-1-container,
+#nf-field-2-container,
+#nf-field-3-container {
+  position: relative;
+  .nf-after-field {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 30px;
+  }
+}
+
+// après le contenu
+.nf-after-form-content {
+  clear: both;
+  .nf-error-msg {
+    border: none;
+    color: $burgundy;
+    font-family: $font-family-accent;
+    font-style:italic;
+    text-transform: lowercase;
+    font-size: $font-size-base * 0.8;
+  }
+}
+
+
+// plus de 480 px
+@include media-breakpoint-up(xs) {
+}
+
+// plus de 600 px
+@include media-breakpoint-up(sm) {
+  .nf-form-cont {
+    // submit button
+    input[type=button] {
+      font-size: $font-size-base * 1.8;
+    }
+    input[placeholder],
+    textarea {
+      font-size: $font-size-base * 1.6;
+    }
+
+  }
+
+
+}
+
+// plus de 840 px
+@include media-breakpoint-up(md) {
+  .nf-form-cont {
+    // submit button
+    input[type=button] {
+      font-size: $font-size-base * 2;
+    }
+
+  }
+
+
+}
+
+
+
+
+
+// plus de 1024 px
+@include media-breakpoint-up(lg) {
+  .nf-form-cont {
+    // submit button
+    input[type=button],
+    input[placeholder],
+    textarea {
+      font-size: $font-size-base * 4.2;
+      line-height: 1;
+    }
+
+  }
+
+
+}
+
+// big devices : 1280px
+@include media-breakpoint-up(xl) {
+  .nf-form-cont {
+    // submit button
+    input[type=button],
+    input[placeholder],
+    textarea {
+      font-size: $font-size-base * 4.4;
+      line-height: 1;
+    }
+
+  }
+
+
+}
+
+// big devices : 1440px
+@include media-breakpoint-up(xxl) {
+  .nf-form-cont {
+    // submit button
+    input[type=button],
+    input[placeholder],
+    textarea {
+      font-size: $font-size-base * 4.8;
+    }
+
+  }
+
+
+}

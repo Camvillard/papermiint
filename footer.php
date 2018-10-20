@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php wp_nav_menu(
 							array(
 								'theme_location'  => 'footer',
-								'container_class' => 'footer-menu-class',
+								'container_class' => 'footer-menu-container',
 								'container_id'    => 'footerMenu',
 								'menu_class'      => 'footer-nav',
 								'menu_id'         => 'footerNav',

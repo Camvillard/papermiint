@@ -1,21 +1,16 @@
 <?php
 /**
- * Template Name: Contact
- *
- * Template for displaying a page just with the header and footer area and a "naked" content area in between.
- * Good for landingpages and other types of pages where you want to add a lot of custom markup.
- *
- * @package papermiint x understrap
- *
- */
+* Template Name: Home
+*
+* This template is for the homepage
+*
+* @package papermiint x understrap
+*
+*/
 
-get_template_part( 'views/header-empty');
-
+get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-
-<div class="retour-site"> <a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"> retour au site</a> </div>
-
 
 <div class="wrapper" id="full-width-page-wrapper">
 
@@ -52,4 +47,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- Wrapper end -->
 
-<?php get_template_part( 'views/footer_contact' ); ?>
+<?php get_footer(); ?>

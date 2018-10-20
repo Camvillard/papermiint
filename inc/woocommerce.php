@@ -30,8 +30,6 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wr
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
 
-
-
 /**
 * Then hook in your own functions to display the wrappers your theme requires
 */
@@ -140,18 +138,12 @@ if ( ! function_exists ( 'understrap_wc_form_field_args' ) ) {
 }
 
 
-
-
 // custom for ppmiint
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 
-// relocate product title
-remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
-add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
-
 // include single page template
-require get_template_directory() . '/woocommerce/templates/content-product_cat.php';
+include get_template_directory() . '/woocommerce/templates/content-product_cat.php';
 require get_template_directory() . '/woocommerce/templates/archive-product.php';
 
 // include single page template
